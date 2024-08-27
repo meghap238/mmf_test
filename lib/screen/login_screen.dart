@@ -87,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   decoration: InputDecoration(
         
                   border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10.sp)),borderSide: BorderSide(width: 1,color: Colors.grey.shade300)),
-               hintText: 'password your email',hintStyle: TextStyle(fontWeight: FontWeight.w400,fontSize: 16.sp,color: Color(0xff949BA5),fontFamily: 'Euclid')
+               hintText: 'enter your password',hintStyle: TextStyle(fontWeight: FontWeight.w400,fontSize: 16.sp,color: Color(0xff949BA5),fontFamily: 'Euclid')
                 ),
                 ),
                 SizedBox(height: 35.sp,),
