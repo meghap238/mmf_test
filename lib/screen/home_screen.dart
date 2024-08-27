@@ -192,28 +192,16 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ],
                         ),
-                        subtitle: Row(
-                          children: [
-                            Text(
-                              userList[index].email ?? 'megha',
-                              style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontSize: 12.sp,
-                                color: Color(0xff212226),
-                                fontFamily: 'Euclid',
-                              ),
-                            ),
-                            SizedBox(width: 8.sp),
-                            Text(
-                              userList[index].phoneNo ?? 'Phone number',
-                              style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontSize: 12.sp,
-                                color: Color(0xff212226),
-                                fontFamily: 'Euclid',
-                              ),
-                            ),
-                          ],
+                        subtitle: Text(
+                          '${userList[index].email ?? 'email'}  ${userList[index].phoneNo ?? 'Phone number'}',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontSize: 12.sp,
+                            color: Color(0xff212226),
+                            fontFamily: 'Euclid',
+                          ),
+                          maxLines: 2, // Set maximum number of lines to 2
+                          overflow: TextOverflow.ellipsis, // Adds "..." at the end if it overflows
                         ),
                         trailing: Container(
                           padding: EdgeInsets.symmetric(horizontal: 10.sp, vertical: 10.sp),
